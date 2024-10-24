@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Rough Suite">
+
+	<listeners>
+		<!-- 
+		<listener class-name="org.uncommons.reportng.HTMLReporter"></listener> 
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+ -->
+
+		<listener class-name="com.tcw.listeners.CustomListener"></listener>
+		<listener class-name="com.tcw.listeners.AnnotationTransfer"> </listener>
+	</listeners>
+
+	<parameter name="Browser" value="firefox"></parameter>
+
+	<test name=" Rough Test">
+		<!-- 
+	<groups>
+		<run>
+			<include name="functionality"></include>
+		</run>
+	</groups>
+-->
+
+		
+
+		<classes>
+			<class name="com.tcw.testcases.DashboardTest" />
+			<!-- 
+			<methods>
+			<include name="myTimeCradExportTest" />
+		</methods>
+		-->
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
+
+
+
+
+
+
+
