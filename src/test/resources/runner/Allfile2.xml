@@ -15,7 +15,7 @@
 	<test name="Page Open Test 3">
 		<parameter name="Browser" value="chrome"></parameter>
 		<classes>
-			
+			<class name="com.tcw.testcases.MessagesTest" />
 			<class name="com.tcw.testcases.ReimbursementTest" />
 		
 		</classes>
