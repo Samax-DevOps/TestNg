@@ -12,7 +12,7 @@
 		<listener class-name="com.tcw.listeners.AnnotationTransfer"> </listener>
 	</listeners>
 
-	<parameter name="Browser" value="firefox"></parameter>
+	<parameter name="Browser" value="localchrome"></parameter>
 
 	<test name=" Rough Test">
 		<!-- 
