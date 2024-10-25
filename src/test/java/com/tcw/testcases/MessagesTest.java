@@ -26,7 +26,7 @@ public class MessagesTest extends LogInTest {
 		dp.hoverOverProfilePic();
 		dp.hoverOnMessages();
 		mp = dp.clickOnViewMessages();
-		Assert.assertEquals(mp.getPageHeading(), "Messages45455454");
+		Assert.assertEquals(mp.getPageHeading(), "Messages");
 	}
 
 	//@Test(priority = 2, groups= {"functionality"},dataProviderClass = DataUtil.class, dataProvider = "dp2") // 
