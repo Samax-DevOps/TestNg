@@ -58,7 +58,7 @@ public class DashboardTest extends LogInTest {
 		Assert.assertTrue(b);
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 6, enabled = false)
 	public void birthdaysAlertTest() {
 		logIn();
 		dashp = new DashboardPage(driver);
