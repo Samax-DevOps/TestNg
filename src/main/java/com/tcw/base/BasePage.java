@@ -83,8 +83,8 @@ public class BasePage {
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", chromePrefs);
 			// options.addArguments("--remote-allow-origins=*");
-			// options.addArguments("--headless"); // --headless=new
-			options.addArguments("--headless=old"); // when it gave a black window
+			options.addArguments("--headless"); // --headless=new
+			// options.addArguments("--headless=old"); // when it gave a black window
 			// options.addArguments("window-position=-2400,-2400"); // when it gave a black window
 			options.addArguments("window-size=1920,1080");
 			WebDriver driver1 = new ChromeDriver(options);
