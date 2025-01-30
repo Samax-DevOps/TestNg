@@ -34,7 +34,7 @@ public class SupportPage extends BasePage {
 	@FindBy(xpath = "//li[@id='liCalendly']/a")
 	WebElement needAssistanceTab;
 
-	@FindBy(xpath = "//div[text()='Time Clock Support']")
+	@FindBy(xpath = "//*[text()='Time Clock Support']")
 	List<WebElement> needAssistanceText;
 
 	Actions act;
