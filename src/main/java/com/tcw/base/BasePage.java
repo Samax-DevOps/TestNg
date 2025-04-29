@@ -43,11 +43,13 @@ public class BasePage {
 	public static void toWait() {
 		BasePage bp = new BasePage();
 		wait = new WebDriverWait(td.get(), Duration.ofSeconds(15));
-
+		try{
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("divLoading")));
 		System.out.println("1");
 		wait.until(ExpectedConditions.invisibilityOfElementLocated(By.id("divLoading")));
 		System.out.println("2");
+		} catch(Exception e) {
+		}
 	}
 
 	@BeforeSuite(alwaysRun = true)
